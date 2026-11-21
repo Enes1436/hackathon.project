@@ -1,0 +1,6 @@
+{
+  "theme": "dark",
+  "api_key": "",
+  "api_endpoint": "https://api.openai.com/v1/chat/completions",
+  "model": "gpt-4.1-mini"
+}

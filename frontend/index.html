@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>SmartDesk 3.15</title>
+  <link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+  <div class="app-shell">
+    <aside class="sidebar">
+      <a class="brand" href="#" data-view="dashboard">
+        <span class="brand-mark">S</span>
+        <span><strong>SMARTDESK</strong><small>3.15</small></span>
+      </a>
+      <nav class="nav" aria-label="Primary">
+        <button class="nav-link active" data-view="dashboard"><span>⌂</span>Dashboard</button>
+        <button class="nav-link" data-view="chat"><span>✦</span>AI Assistant</button>
+        <button class="nav-link" data-view="code"><span>&lt;/&gt;</span>Python Lab</button>
+        <button class="nav-link" data-view="calculator"><span>±</span>Calculator</button>
+        <button class="nav-link" data-view="notes"><span>≡</span>Notes</button>
+        <button class="nav-link" data-view="tasks"><span>✓</span>Tasks</button>
+        <button class="nav-link" data-view="quiz"><span>?</span>Quiz</button>
+        <button class="nav-link" data-view="statistics"><span>▥</span>Statistics</button>
+      </nav>
+      <button class="settings-button" data-view="settings">⚙ Settings</button>
+    </aside>
+
+    <main class="main">
+      <header class="topbar">
+        <button class="menu-button" id="menu-button" aria-label="Toggle navigation">☰</button>
+        <div>
+          <p class="eyebrow">Workspace</p>
+          <h1 id="page-title">Dashboard</h1>
+        </div>
+        <span class="status-pill"><i></i>Local backend</span>
+      </header>
+      <section id="view" class="view" aria-live="polite"></section>
+    </main>
+  </div>
+  <div id="toast" class="toast" role="status"></div>
+  <script src="/app.js"></script>
+</body>
+</html>
